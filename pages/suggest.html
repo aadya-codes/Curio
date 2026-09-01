@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggest Something | Curio</title>
+    <link rel="stylesheet" href="../style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <script type="module" src="/script.js"></script>
+    <script type="module" src="../page-three.js"></script>
+</head>
+
+<body data-three-page="suggest">  
+    <header class="page-header">
+        <a href="../index.html" class="back-button"> <- Back</a>
+
+        <h1>Suggest Something :)</h1>
+
+        <p>
+        Help me waste time.
+        </p>
+
+    </header>
+
+    <main class="collection">
+
+        <form class="suggest-form"
+        name="suggestion"
+        method="POST"
+        data-netlify="true">
+
+            <input type="hidden"
+                name="form-name"
+                value="suggestion">
+
+
+            <label for="thing">
+                What should I investigate?
+            </label>
+
+            <input
+                type="text"
+                id="thing"
+                name="thing"
+                placeholder="A bizarre hobby, strange fact, niche obsession..."
+                required
+            >
+
+            <label for="link">
+                Where can I find it?
+            </label>
+
+            <input
+                type="url"
+                id="link"
+                name="link"
+                placeholder="https://..."
+                required
+            >
+
+            <label for="name">
+                Your name
+                <span>(optional)</span>
+            </label>
+
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Anonymous is fine"
+            >
+
+            <button type="submit">
+                Send it down the hole
+            </button>
+
+        </form>
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzles | Curio</title>
+    <link rel="stylesheet" href="../style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <script type="module" src="/script.js"></script>
+    <script type="module" src="../page-three.js"></script>
+
+</head>
+
+<body data-three-page="puzzles">
+    <header class="page-header">
+        <a href="../index.html" class="back-button"> <- Back</a>
+
+        <h1>Puzzles</h1>
+
+        <p>
+        For people who enjoy being wrong several times before being right.
+        </p>
+
+    </header>
+
+    <main class="collection">
+
+    <article class="entry">
+
+    <div class="entry-header">
+
+        <span class="number">01</span>
+
+        <div>
+
+            <h2>The Monty Hall Problem</h2>
+
+            <p class="preview">
+                Three doors. One car. Two goats. Your odds are probably not what you think.
+            </p>
+
+            <div class="meta">
+
+                <span>| Statistics |</span>
+
+                <span>| 3 min |</span>
+
+            </div>
+            
+
+        </div>
+
+    </div>
+
+    <div class="entry-content">
+
+        <p>
+            You're on a game show with three closed doors. </br>
+    
+            Behind one door is a car.</br>
+        
+            Behind the other two are goats.</br>
+
+            You choose Door 1.</br>
+
+            The host, who knows where the car is, opens another door—say Door 3—revealing a goat.</br>
+
+            Two doors remain:</br>
+
+            Door 1 (your original choice)</br>
+            Door 2</br>
+
+            The host asks:</br>
+
+            Would you like to switch?</br>
+
+            Before reading further, decide:</br>
+
+            Stay?
+            Switch?
+            Doesn't matter?
+        </p>
+
+        <div class="peek">
+
+            <button class="peek-button">
+                Peek
+            </button>
+
+            <div class="peek-image">
+
+                <img
+                    src="https://media.geeksforgeeks.org/wp-content/uploads/20250722165253621826/monty_hall.webp"
+                    alt="Illustration of Monty Hall Problem"
+                >
+
+            </div>
+
+        </div>
+
+        <button class="answer-btn">
+            I give up.
+        </button>
+
+        <div class="answer">
+            <p>
+                You should always switch.
+
+                It feels like the odds become 50–50 once a goat is revealed, but they don't.</br>
+
+                Your first choice had only a 1 in 3 chance of being correct.</br>
+
+                That means there was a 2 in 3 chance the car was behind one of the other two doors.</br>
+
+                When the host opens a door, they aren't choosing randomly—they deliberately reveal a goat.</br>
+
+                So the entire 2/3 probability transfers to the one unopened door.</br>
+
+                Stay: 1/3 chance of winning.</br>
+
+                Switch: 2/3 chance of winning.
+            </p>
+        </div>
+
+    </div>
+
+    </article>
+
+    <article class="entry">
+
+    <div class="entry-header">
+
+        <span class="number">02</span>
+
+        <div>
+
+            <h2>The Green-Eyed Islanders</h2>
+
+            <p class="preview">
+                Everyone can see everyone else's eye colour but nobody knows their own. 
+                Then a stranger says one sentence that changes everything.
+            </p>
+
+            <div class="meta">
+
+                <span>| Logic |</span>
+
+                <span>| 4 min |</span>
+
+            </div>
+            
+
+        </div>
+
+    </div>
+
+    <div class="entry-content">
+
+        <p>
+            You arrive on an island with 100 inhabitants. </br>
+    
+            Every person has either green or brown eyes.</br>
+        
+            They can see everyone else's eye colour, but nobody can see their own. 
+            They never discuss eye colour with each other.</br>
+
+            Anyone who discovers that they have green eyes must leave the island at midnight.</br>
+
+            One day, a visitor announces: <b>“At least one person on this island has green eyes.”</b></br>
+
+            You know that exactly 100 people have green eyes.</br>
+
+            What happens?
+        </p>
+
+        <button class="answer-btn">
+            I give up.
+        </button>
+
+        <div class="answer">
+            <p>
+                Let's start with just one green-eyed person.</br>
+
+                They look around and see nobody else with green eyes.
+                After hearing the visitor's statement, they think: <b>“If I don't have green eyes, then nobody here has green eyes. 
+                But the visitor said at least one person does. So it must be me.”</b></br>
+
+                They leave that night.</br>
+
+                Now imagine there are two green-eyed people.</br>
+
+                Each sees one other person with green eyes.
+                Each thinks: <b>“If I don't have green eyes, that person is the only green-eyed person here. 
+                They should realise it and leave tonight.”</b></br>
+
+                But nobody leaves.
+                So on the second night, they both realise: <b>“I must have green eyes too.”</b></br>
+
+                They leave together.</br>
+
+                So the pattern continues.</br>
+
+                With 100 green-eyed people, all 100 leave on the 100th night.
+            </p>
+        </div>
+
+    </div>
+
+    </article>
+
+
+    <article class="entry sudoku-entry">
+
+        <div class="entry-header">
+
+            <span class="number">03</span>
+
+            <div>
+
+                <h2>Some good old Sudoku</h2>
+
+                <p class="preview"></p>
+
+                <div class="meta">
+                    <span>| Sudoku |</span>
+                    <span>| ? min |</span>
+                    <span>| Click Here |</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="entry-content">
+
+            <div class="sudoku" id="sudoku"></div>
+
+
+            <div class="number-pad">
+
+                <button data-number="1">1</button>
+                <button data-number="2">2</button>
+                <button data-number="3">3</button>
+                <button data-number="4">4</button>
+                <button data-number="5">5</button>
+                <button data-number="6">6</button>
+                <button data-number="7">7</button>
+                <button data-number="8">8</button>
+                <button data-number="9">9</button>
+
+            </div>
+
+            <p id="sudoku-message"></p>
+
+        </div>
+
+    </article>
+
+    <article class="entry">
+
+    <div class="entry-header">
+
+        <span class="number">04</span>
+
+        <div>
+
+            <h2>The Two Ropes</h2>
+
+            <p class="preview">
+                Two ropes each take exactly an hour to burn, but neither burns at a consistent speed. Can you measure 45 minutes?
+            </p>
+
+            <div class="meta">
+
+                <span>| Logic |</span>
+
+                <span>| 2 min |</span>
+
+            </div>
+            
+
+        </div>
+
+    </div>
+
+    <div class="entry-content">
+
+        <p>
+            You have two ropes.
+            Each rope takes exactly 60 minutes to burn from one end to the other.</br>
+
+            But there's a catch:
+            They don't burn at a consistent rate.</br>
+
+            One half of a rope might burn in 5 minutes, while the other half takes 55 minutes.</br>
+
+            You have a lighter, but no clock.</br>
+
+            How can you measure exactly 45 minutes?</br>
+        </p>
+
+        <button class="answer-btn">
+            I give up.
+        </button>
+
+        <div class="answer">
+            <p>
+                Light both ends of Rope A and one end of Rope B at the same time.</br>
+                
+                Because Rope A is burning from both ends, it will take exactly 30 minutes to burn completely.
+                The uneven burning rate doesn't matter. Both flames are consuming the rope simultaneously, so the total burning time is halved.</br>
+
+                When Rope A finishes, exactly 30 minutes have passed.</br>
+
+                Now light the other end of Rope B.</br>
+
+                Rope B has already been burning for 30 minutes from one end. We don't know how much rope remains, because its burning rate is uneven.
+                But we do know that whatever remains would have taken 30 minutes to burn from one end.</br>
+
+                Now it is burning from both ends, so it takes exactly 15 more minutes.</br>
+
+                30 + 15 = 45 minutes.</br>
+            </p>
+        </div>
+
+    </div>
+
+    </article>
+
+</main>
+
+</body>
+
+</html>
+
+
